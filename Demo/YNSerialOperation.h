@@ -14,13 +14,26 @@
 
 
 //adding
-- (void)addOperation:(NSOperationQueue *)operationQueue;
+
+- (void)addBlockOperationWithBlock:(void (^) (void))block withName:(NSString *)name;
+
+- (void)addOperation:(NSOperation *)operation withOperationName:(NSString *)name;
+
+- (void)addBlockOperation:(NSBlockOperation *)blockOperation withBlockOperationName:(NSString *)name;
+
+
 
 //cancle
 - (void)cancleOperation:(NSString *)operationName;
 
+//canle all
+- (void)cancleAllOperation;
+
 //suspended
 - (void)suspendedOperation:(NSString *)operationName;
 
+
+
+- (NSOperationQueue *)currentOperation;
 
 @end

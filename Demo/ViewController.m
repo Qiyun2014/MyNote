@@ -13,6 +13,7 @@
 #import <OpenGLES/EAGL.h>
 #import <GLKit/GLKit.h>
 #import <objc/runtime.h>
+#import "YNSerialOperation.h"
 
 @interface ViewController ()<CLLocationManagerDelegate,GLKViewDelegate>
 {
@@ -67,6 +68,40 @@ EAGLContext* CreateBestEAGLContext()
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+
+
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+
+        [[YNSerialOperation shareInstanceWithOperation] addBlockOperationWithBlock:^{
+
+            NSLog(@"1");
+
+        } withName:@"1"];
+
+        [[YNSerialOperation shareInstanceWithOperation] addBlockOperationWithBlock:^{
+
+            NSLog(@"2");
+
+        } withName:@"2"];
+
+        [[YNSerialOperation shareInstanceWithOperation] addBlockOperationWithBlock:^{
+
+            NSLog(@"3");
+
+        } withName:@"3"];
+
+        [[YNSerialOperation shareInstanceWithOperation] addBlockOperationWithBlock:^{
+
+            NSLog(@"4");
+
+        } withName:@"4"];
+
+        
+    });
+
+
+
+
     
     /*
     context = CreateBestEAGLContext();
