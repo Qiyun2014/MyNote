@@ -19,6 +19,7 @@
 		FA4EBA061CA3EDC6009157E7 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4EBA051CA3EDC6009157E7 /* Reachability.m */; };
 		FA4EBA091CA3EDF0009157E7 /* PDLMapViewController+networkReachable.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4EBA081CA3EDF0009157E7 /* PDLMapViewController+networkReachable.m */; };
 		FA4EE5311CA8CA8500E9B127 /* GFLConventionsDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4EE52F1CA8CA8500E9B127 /* GFLConventionsDocument.xib */; };
+		FA5886E61CB5182000ECB5C3 /* YNSerialOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5886E51CB5182000ECB5C3 /* YNSerialOperation.m */; };
 		FA5BD1411CABC9DB00C87025 /* alertview_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA5BD1401CABC9DB00C87025 /* alertview_background@2x.png */; };
 		FA5BD1431CABC9FF00C87025 /* PDLAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5BD1421CABC9FF00C87025 /* PDLAlertView.xib */; };
 		FA5BD1461CABCC8100C87025 /* PDLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5BD1451CABCC8100C87025 /* PDLAlertView.m */; };
@@ -65,6 +66,8 @@
 		FA4EBA071CA3EDF0009157E7 /* PDLMapViewController+networkReachable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PDLMapViewController+networkReachable.h"; sourceTree = "<group>"; };
 		FA4EBA081CA3EDF0009157E7 /* PDLMapViewController+networkReachable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PDLMapViewController+networkReachable.m"; sourceTree = "<group>"; };
 		FA4EE52F1CA8CA8500E9B127 /* GFLConventionsDocument.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFLConventionsDocument.xib; sourceTree = "<group>"; };
+		FA5886E41CB5182000ECB5C3 /* YNSerialOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNSerialOperation.h; sourceTree = "<group>"; };
+		FA5886E51CB5182000ECB5C3 /* YNSerialOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNSerialOperation.m; sourceTree = "<group>"; };
 		FA5BD1401CABC9DB00C87025 /* alertview_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alertview_background@2x.png"; sourceTree = "<group>"; };
 		FA5BD1421CABC9FF00C87025 /* PDLAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PDLAlertView.xib; sourceTree = "<group>"; };
 		FA5BD1441CABCC8100C87025 /* PDLAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDLAlertView.h; sourceTree = "<group>"; };
@@ -142,6 +145,8 @@
 				FA1C524A1CA0F14D00C3C73A /* LaunchScreen.storyboard */,
 				FA1C524D1CA0F14D00C3C73A /* Info.plist */,
 				FA1C523C1CA0F14D00C3C73A /* Supporting Files */,
+				FA5886E41CB5182000ECB5C3 /* YNSerialOperation.h */,
+				FA5886E51CB5182000ECB5C3 /* YNSerialOperation.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -310,6 +315,7 @@
 				FA1C52411CA0F14D00C3C73A /* AppDelegate.m in Sources */,
 				FA4EBA061CA3EDC6009157E7 /* Reachability.m in Sources */,
 				FA1C523E1CA0F14D00C3C73A /* main.m in Sources */,
+				FA5886E61CB5182000ECB5C3 /* YNSerialOperation.m in Sources */,
 				FA4EBA091CA3EDF0009157E7 /* PDLMapViewController+networkReachable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
