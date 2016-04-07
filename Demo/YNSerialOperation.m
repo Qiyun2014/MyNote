@@ -45,7 +45,7 @@ static YNSerialOperation    *serialOpration = nil;
 
     if (!block) return;
 
-    sleep(1);
+    //sleep(1);
 
     NSBlockOperation *blockOperation = [NSBlockOperation blockOperationWithBlock:block];
     [[YNSerialOperation shareInstanceWithOperation] addBlockOperation:blockOperation
@@ -66,14 +66,12 @@ static YNSerialOperation    *serialOpration = nil;
     }];
 
     if (!isContainsObject){
-
+        
+        if ([self getAllOperation].count)
+            [operation addDependency:[self getAllOperation].lastObject];
+        
         operation.name = name;
         [[YNSerialOperation shareInstanceWithOperation].operationQueue addOperation:operation];
-
-        if ([self getAllOperation].count) {
-
-            [operation addDependency:[self getAllOperation].lastObject];
-        }
     };
 }
 
